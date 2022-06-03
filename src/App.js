@@ -9,8 +9,7 @@ function App() {
     </Folder>
     <Folder name="Pictures">
   <File name="dogs.jpeg" />
-  <File name="cats.png" />
-  <File name="birds.png" />
+  <File name="trucks.png" />
   </Folder>
   </Folder>
   <Folder name="Application"/>
@@ -28,7 +27,7 @@ const Folder = (props) =>{
 
 return <div>
   <span onClick={handleClick}>
-    <i className=" grey folder icon"></i>
+    <i className=" yellow folder icon"></i>
     <i className={`caret ${direction} icon`}></i>
     </span>
     {name}
@@ -43,8 +42,8 @@ const File = (props) => {
   const fileExtension = name.split(".")[1];
   const fileIcons = {
 mp4: "headphones",
-jpeg: "file image",
-png: "file image outline",
+jpeg: "paw",
+png: "truck",
   };
 return <div>
   <i className={`${fileIcons[fileExtension]} icon`}></i>
